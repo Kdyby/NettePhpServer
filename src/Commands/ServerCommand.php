@@ -14,6 +14,27 @@ use Symfony\Component\Console\Command\Command;
 abstract class ServerCommand extends Command
 {
     /**
+     * @var string
+     */
+    private $documentRoot;
+
+    /**
+     * @return string
+     */
+    public function getDocumentRoot()
+    {
+        return $this->documentRoot;
+    }
+
+    /**
+     * @param string $documentRoot
+     */
+    public function setDocumentRoot($documentRoot)
+    {
+        $this->documentRoot = $documentRoot;
+    }
+
+    /**
      * {@inheritdoc}
      */
     public function isEnabled()

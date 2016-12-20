@@ -69,10 +69,10 @@ EOF
             return 1;
         }
 
-        $documentRoot = $this->getHelper('container')->getParameter('wwwDir');
+        $documentRoot = $this->getDocumentRoot();
 
         if (!is_dir($documentRoot)) {
-            $io->error(sprintf('The given document root directory "%s" does not exist.', $documentRoot));
+            $io->error(sprintf("Document root directory '%s' does not exist", $documentRoot));
 
             return 1;
         }

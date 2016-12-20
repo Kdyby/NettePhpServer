@@ -30,3 +30,14 @@ extensions:
     console: Kdyby\Console\DI\ConsoleExtension
     server: Sunfox\PhpServer\DI\PhpServerExtension
 ```
+
+Configuration
+-------------
+
+This extension creates new configuration section `server`, but you don't need to configure
+anything unless you have different document root dir than `www`.
+
+```yml
+server:
+    documentRoot: %appDir%/../htdocs
+```

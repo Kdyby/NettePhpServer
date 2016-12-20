@@ -24,6 +24,13 @@ class PhpServerExtension extends CompilerExtension
         'cli.serverStop' => 'Sunfox\PhpServer\Commands\ServerStopCommand',
     ];
 
+    /**
+     * @var array
+     */
+    private $defaults = [
+        'documentRoot' => '%appDir%/../www',
+    ];
+
 
     public function loadConfiguration()
     {
@@ -34,12 +41,14 @@ class PhpServerExtension extends CompilerExtension
             );
         }
 
+        $config = $this->getConfig($this->defaults);
         $builder = $this->getContainerBuilder();
 
         foreach (self::$commands as $alias => $class) {
             $builder->addDefinition($this->prefix($alias))
-                ->addTag(ConsoleExtension::TAG_COMMAND)
                 ->setClass($class)
+                ->addSetup('setDocumentRoot', [$config['documentRoot']])
+                ->addTag(ConsoleExtension::TAG_COMMAND)
                 ->setInject(FALSE); // lazy injects
         }
     }
