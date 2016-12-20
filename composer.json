@@ -1,0 +1,27 @@
+{
+    "name": "sunfoxcz/nette-php-server",
+    "type": "library",
+    "description": "Nette console commands for running application in php builtin server.",
+    "keywords": ["console", "command", "server", "php"],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Tomas Jacik",
+            "email": "tomas.jacik@sunfox.cz",
+            "homepage": "http://sunfox.cz"
+        }
+    ],
+    "require": {
+        "kdyby/console": "~2.5",
+        "symfony/process": "~3.2"
+    },
+    "require-dev": {
+        "nette/tester": "^1.7",
+        "nette/bootstrap": "~2.3@dev"
+    },
+    "autoload": {
+        "psr-4": {
+            "Sunfox\\PhpServer\\": "src/"
+        }
+    }
+}
