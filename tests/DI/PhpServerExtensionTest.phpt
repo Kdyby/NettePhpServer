@@ -3,7 +3,7 @@
 namespace Tests;
 
 use Nette;
-use Sunfox\PhpServer\DI\PhpServerExtension;
+use Kdyby\NettePhpServer\DI\PhpServerExtension;
 use Tester;
 use Tester\Assert;
 
@@ -12,7 +12,7 @@ require_once __DIR__ . '/../bootstrap.php';
 
 
 /**
- * @author Tomas Jacik <tomas.jacik@sunfox.cz>
+ * @author Tomas Jacik <tomas@jacik.cz>
  */
 class PhpServerExtensionTest extends Tester\TestCase
 {
@@ -33,9 +33,9 @@ class PhpServerExtensionTest extends Tester\TestCase
     {
         $dic = $this->createContainer();
 
-        Assert::type('Sunfox\PhpServer\Commands\ServerRunCommand', $dic->getService('server.cli.serverRun'));
-        Assert::type('Sunfox\PhpServer\Commands\ServerStartCommand', $dic->getService('server.cli.serverStart'));
-        Assert::type('Sunfox\PhpServer\Commands\ServerStopCommand', $dic->getService('server.cli.serverStop'));
+        Assert::type('Kdyby\NettePhpServer\Commands\ServerRunCommand', $dic->getService('server.cli.serverRun'));
+        Assert::type('Kdyby\NettePhpServer\Commands\ServerStartCommand', $dic->getService('server.cli.serverStart'));
+        Assert::type('Kdyby\NettePhpServer\Commands\ServerStopCommand', $dic->getService('server.cli.serverStop'));
     }
 }
 

@@ -1,7 +1,7 @@
 Nette PHP Server
 ================
 
-[![Build Status](https://travis-ci.org/sunfoxcz/nette-php-server.svg?branch=master)](https://travis-ci.org/sunfoxcz/nette-php-server)
+[![Build Status](https://travis-ci.org/kdyby/nette-php-server.svg?branch=master)](https://travis-ci.org/kdyby/nette-php-server)
 
 Nette console commands for running application in php builtin server.
 
@@ -20,7 +20,7 @@ Installation
 The best way to install Nette PHP Server is using [Composer](https://getcomposer.org):
 
 ```sh
-$ composer require sunfoxcz/nette-php-server
+$ composer require kdyby/nette-php-server
 ```
 
 You can enable the extension using your neon config.
@@ -28,7 +28,7 @@ You can enable the extension using your neon config.
 ```yml
 extensions:
     console: Kdyby\Console\DI\ConsoleExtension
-    server: Sunfox\PhpServer\DI\PhpServerExtension
+    server: Kdyby\NettePhpServer\DI\PhpServerExtension
 ```
 
 Configuration

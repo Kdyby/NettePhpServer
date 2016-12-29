@@ -1,6 +1,6 @@
 <?php
 
-namespace Sunfox\PhpServer\Commands;
+namespace Kdyby\NettePhpServer\Commands;
 
 use Symfony\Component\Console\Input\InputArgument;
 use Symfony\Component\Console\Input\InputInterface;
@@ -18,7 +18,7 @@ use Symfony\Component\Process\ProcessBuilder;
  * Runs Nette application using PHP built-in web server.
  *
  * @author Michał Pipa <michal.pipa.xsolve@gmail.com>
- * @author Tomas Jacik <tomas.jacik@sunfox.cz>
+ * @author Tomas Jacik <tomas@jacik.cz>
  */
 class ServerRunCommand extends ServerCommand
 {

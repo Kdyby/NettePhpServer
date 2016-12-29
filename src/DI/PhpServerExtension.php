@@ -1,6 +1,6 @@
 <?php
 
-namespace Sunfox\PhpServer\DI;
+namespace Kdyby\NettePhpServer\DI;
 
 use Kdyby\Console\DI\ConsoleExtension;
 use Nette\Configurator;
@@ -12,16 +12,16 @@ use Nette\Utils\AssertionException;
 /**
  * Nette extension for the registration of console commands.
  *
- * @author Tomas Jacik <tomas.jacik@sunfox.cz>
+ * @author Tomas Jacik <tomas@jacik.cz>
  */
 class PhpServerExtension extends CompilerExtension
 {
     const CONSOLE_EXT = 'Kdyby\Console\DI\ConsoleExtension';
 
     private static $commands = [
-        'cli.serverRun' => 'Sunfox\PhpServer\Commands\ServerRunCommand',
-        'cli.serverStart' => 'Sunfox\PhpServer\Commands\ServerStartCommand',
-        'cli.serverStop' => 'Sunfox\PhpServer\Commands\ServerStopCommand',
+        'cli.serverRun' => 'Kdyby\NettePhpServer\Commands\ServerRunCommand',
+        'cli.serverStart' => 'Kdyby\NettePhpServer\Commands\ServerStartCommand',
+        'cli.serverStop' => 'Kdyby\NettePhpServer\Commands\ServerStopCommand',
     ];
 
     /**

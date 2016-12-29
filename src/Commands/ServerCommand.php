@@ -1,6 +1,6 @@
 <?php
 
-namespace Sunfox\PhpServer\Commands;
+namespace Kdyby\NettePhpServer\Commands;
 
 use Symfony\Component\Console\Command\Command;
 
@@ -9,7 +9,7 @@ use Symfony\Component\Console\Command\Command;
  * Base methods for commands related to PHP's built-in web server.
  *
  * @author Christian Flothmann <christian.flothmann@xabbuh.de>
- * @author Tomas Jacik <tomas.jacik@sunfox.cz>
+ * @author Tomas Jacik <tomas.jacik.cz>
  */
 abstract class ServerCommand extends Command
 {
