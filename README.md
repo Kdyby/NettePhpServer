@@ -1,7 +1,7 @@
 Nette PHP Server
 ================
 
-[![Build Status](https://travis-ci.org/kdyby/nette-php-server.svg?branch=master)](https://travis-ci.org/kdyby/nette-php-server)
+[![Build Status](https://travis-ci.org/Kdyby/NettePhpServer.svg?branch=master)](https://travis-ci.org/Kdyby/NettePhpServer)
 
 Nette console commands for running application in php builtin server.
 
