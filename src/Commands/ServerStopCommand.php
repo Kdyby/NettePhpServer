@@ -1,6 +1,6 @@
 <?php
 
-namespace Sunfox\PhpServer\Commands;
+namespace Kdyby\NettePhpServer\Commands;
 
 use Symfony\Component\Console\Input\InputArgument;
 use Symfony\Component\Console\Input\InputInterface;
@@ -13,7 +13,7 @@ use Symfony\Component\Console\Style\SymfonyStyle;
  * Stops a background process running PHP's built-in web server.
  *
  * @author Christian Flothmann <christian.flothmann@xabbuh.de>
- * @author Tomas Jacik <tomas.jacik@sunfox.cz>
+ * @author Tomas Jacik <tomas@jacik.cz>
  */
 class ServerStopCommand extends ServerCommand
 {

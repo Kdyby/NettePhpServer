@@ -1,5 +1,5 @@
 {
-    "name": "sunfoxcz/nette-php-server",
+    "name": "kdyby/nette-php-server",
     "type": "library",
     "description": "Nette console commands for running application in php builtin server.",
     "keywords": ["console", "command", "server", "php"],
@@ -7,8 +7,8 @@
     "authors": [
         {
             "name": "Tomas Jacik",
-            "email": "tomas.jacik@sunfox.cz",
-            "homepage": "http://sunfox.cz"
+            "email": "tomas@jacik.cz",
+            "homepage": "https://tomasjacik.cz"
         }
     ],
     "require": {
@@ -21,7 +21,7 @@
     },
     "autoload": {
         "psr-4": {
-            "Sunfox\\PhpServer\\": "src/"
+            "Kdyby\\NettePhpServer\\": "src/"
         }
     }
 }

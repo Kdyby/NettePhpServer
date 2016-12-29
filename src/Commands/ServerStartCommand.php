@@ -1,6 +1,6 @@
 <?php
 
-namespace Sunfox\PhpServer\Commands;
+namespace Kdyby\NettePhpServer\Commands;
 
 use Symfony\Component\Console\Input\InputArgument;
 use Symfony\Component\Console\Input\InputInterface;
@@ -15,7 +15,7 @@ use Symfony\Component\Process\Process;
  * Runs PHP's built-in web server in a background process.
  *
  * @author Christian Flothmann <christian.flothmann@xabbuh.de>
- * @author Tomas Jacik <tomas.jacik@sunfox.cz>
+ * @author Tomas Jacik <tomas@jacik.cz>
  */
 class ServerStartCommand extends ServerCommand
 {
