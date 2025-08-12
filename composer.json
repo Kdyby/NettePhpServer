@@ -12,8 +12,8 @@
         }
     ],
     "require": {
-        "kdyby/console": "~3.0",
-        "symfony/process": "~5.1"
+        "kdyby/console": "~4.0",
+        "symfony/process": "~5.4"
     },
     "require-dev": {
         "nette/tester": "^1.7",
